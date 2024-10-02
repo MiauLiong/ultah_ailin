@@ -240,7 +240,7 @@ body {
 .home {
   margin: 5rem 0 5rem 0;
   padding: 5rem;
-  background-color: var(--bg);
+  background-color: var(--card);
   height: auto;
   width: 100%;
 }
