@@ -262,7 +262,7 @@ body {
   background: var(--card);
   border-radius: 4px;
   height: 85vh;
-  width: 80vw;
+  width: 100%;
   box-shadow: var(--box-shadow);
   text-align: center;
   display: flex;
