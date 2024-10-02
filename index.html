@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.4/dist/sweetalert2.all.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Selamat Ulang Tahun</title>
+    <style>
+      :root {
+        --card: #fff8e1;
+        --font: #8b5a3e;
+        --bg: #f4c3c3;
+        --box-shadow: 0 3px 6px #00000029, 0 3px 6px rgba(0, 0, 0, 0.23);
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      * {
+        padding: 0;
+        margin: 0;
+        font-family: "Ubuntu";
+        color: rgb(56, 56, 56);
+      }
+      .body {
+        background-color: var(--bg);
+      }
+      .body .kartu {
+        padding-top: 40px;
+        padding-bottom: 40px;
+      }
+      .body .kartu img {
+        background-color: var(--card);
+        box-shadow: var(--box-shadow);
+        border-radius: 6px;
+        height: 200px;
+        width: 200px;
+        margin-bottom: 20px;
+      }
+      .body .kartu h3 i {
+        color: var(--font);
+      }
+      .body .kartu h3 {
+        padding: 10px;
+        border: 4px solid var(--font);
+        border-radius: 15px;
+        margin: auto;
+        width: 300px;
+        font-size: 18px;
+        background-color: var(--card);
+        color: var(--font);
+      }
+      .body .kartu .judul-undangan h4 {
+        font-family: "Great Vibes";
+        font-size: 40px;
+        color: var(--font);
+      }
+      .isi {
+        display: none; /* Sembunyikan section dengan class isi */
+      }
+    </style>
+  </head>
+  <body class="body">
+    <audio class="audio" src="musik/lagu.mp3" autoplay type="audio" loop=""></audio>
+
+    <div class="open" style="padding-top: 10%">
+      <div class="kartu text-center">
+        <img src="img/foto1.png" alt="" />
+        <div class="judul-undangan">
+          <h4>賴愛琳 (Abril)</h4>
+        </div>
+        <div class="ucapan-hormat p-3">
+          <h5 onclick="mulai()">Ada pesan buat kamu!!</h5>
+        </div>
+        <audio class="audio" src="musik/lagu.mp3" autoplay loop></audio>
+        <a href="#" style="text-decoration: none" onclick="mulai()">
+          <h3 class="buka"><i class="bi bi-envelope-paper-fill"></i> Tekan untuk membuka</h3>
+        </a>
+      </div>
+    </div>
+
+    <section class="isi">
+      <!-- hero starts -->
+      <section id="hero" class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white">
+        <main>
+          <h4>Kepada kamu, adik koko</h4>
+          <h1>賴愛琳 (Abril)</h1>
+          <p>Selamat Ulang Tahun, Jangan kasih liat ke orang lain ya Keliatan alay kali</p>
+        </main>
+      </section>
+      <!-- hero end -->
+
+      <!-- section home start -->
+      <section id="home" class="home">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-8 text-center">
+              <h3>Tepat pada tanggal 4 Oktober 2024, <br />Awalnya gw mau mengatakan seperti ini ke lu</h3>
+              <p>
+                Selamat ulang tahun adek koko yang kurus, cacingan, sok sokan mau diet dan sering gadang, <br />
+                Ciee... yang udah tua <br />
+                <br />
+                Hari ini bukan cuma spesial karena <br />
+                kamu tambah satu tahun, tapi karena dunia jadi lebih cerah sejak kamu ada. <br />
+                Eaakkkk....<br />
+                <br />
+                Semoga dengan bertambahnya usia ini, semua impian kamu bisa tercapai, seperti tambah baik, gemuk, sehat, kaya dan bisa kurangin gadang <br />
+                Ohh.. iya satu lagi <br />
+                Jangan keras kepala ya <br />
+                Heheh becanda <br />
+                <br />
+                Koko berharap kau di berikan kesehatan, rezeki yang berlimpah tapi jangan boros - boros dan kebahagiaan (biar ketawa nular ke koko) <br />
+                <br />
+                Sekali lagi, selamat ulang tahun, Ai Lin! <br />
+                Terima kasih sudah hadir di hidup koko dan membuat setiap hari koko terasa lebih seru dan konyol <br />
+                Sumpah kau adalah orang yang paling nyeselin, tapi kau bisa membuat koko merasa nyaman.
+              </p>
+
+              <h3>Tapi lupain aja</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- section home end -->
+
+      <!-- FOOTER START-->
+      <div class="card">
+        <img src="img/foto1.png" alt="birthday" class="birthday" />
+        <div class="text">
+          <h1>Happy Birthday!</h1>
+          <p>
+            Semoga harimu di penuhi cinta dan keceriaan. <br />
+            Semoga kamu dikelilingi oleh orang yang ingin kau cintai
+          </p>
+          <p class="muted">- salam manis dari gw</p>
+        </div>
+        <div class="space"></div>
+      </div>
+
+      <footer class="copyright-text">
+        <h5>Created with love by C.M.L | Copyright &copy; 4 Oktober 2024</h5>
+      </footer>
+      <!-- FOOTER END-->
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      var musik = "musik/lagu.mp3";
+    </script>
+    <script>
+      var audio = document.querySelector(".audio");
+      if (musik) {
+        audio.src = musik;
+      }
+      function mulai() {
+        audio.play();
+        document.querySelector(".open").style.opacity = "0"; // Sembunyikan elemen open
+        setTimeout(() => {
+          document.querySelector(".open").style.display = "none"; // Hapus elemen open dari tampilan
+          document.querySelector(".isi").style.display = "block"; // Tampilkan section isi
+        }, 300); // Tunggu beberapa detik untuk efek transisi
+        document.querySelector(".body").style.overflowY = "scroll"; // Aktifkan scroll
+      }
+    </script>
+  </body>
+</html>
